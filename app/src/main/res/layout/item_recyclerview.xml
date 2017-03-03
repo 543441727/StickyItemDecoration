@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="观众:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img"
+        android:layout_marginTop="12dp"
+        android:id="@+id/tv_score_spectator"/>
+
+    <TextView
+        android:text="8.0"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_score_spectator"
+        android:layout_toRightOf="@+id/tv_score_spectator"
+        android:layout_toEndOf="@+id/tv_score_spectator"
+        android:id="@+id/tv_score_people_real"/>
+
+    <TextView
+        android:text="专业:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/tv_score_people_real"
+        android:layout_toRightOf="@+id/tv_score_people_real"
+        android:layout_toEndOf="@+id/tv_score_people_real"
+        android:id="@+id/textView4"/>
+
+    <TextView
+        android:text="6.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:id="@+id/tv_score_major_real"/>
+
+    <TextView
+        android:text="28岁未成年"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/tv_title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img"/>
+
+    <TextView
+        android:text="这里是介绍介绍啊"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_score_spectator"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img"
+        android:layout_marginTop="17dp"
+        android:id="@+id/tv_introduce"/>
+
+    <TextView
+        android:text="上映时间：2017.03.05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_introduce"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_time"/>
+
+</RelativeLayout>
